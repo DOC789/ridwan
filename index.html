@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toshiko Massage Chair - Kursi Pijat Teknologi AI Jepang #1</title>
+    <title>Toshiko Massage Chair - Investasi Kesehatan Keluarga</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -15,7 +15,6 @@
             overflow-x: hidden;
         }
 
-        /* Efek Glassmorphism Dasar */
         .glass {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(12px);
@@ -24,19 +23,16 @@
             border-radius: 24px;
         }
 
-        /* Efek Glassmorphism Gelap (untuk footer) */
         .glass-dark {
             background: rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Efek Cahaya Neon */
         .glow {
             box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
         }
         
-        /* Animasi Mengambang untuk Gambar Produk */
         .floating {
             animation: floating 4s ease-in-out infinite;
         }
@@ -47,12 +43,28 @@
             100% { transform: translateY(0px); }
         }
 
-        /* Mengatur agar gambar responsif di dalam frame */
-        .image-frame img {
+        /* Styling khusus untuk gambar dalam kartu katalog */
+        .card-img-container {
             width: 100%;
-            height: auto;
-            object-fit: contain; /* Memastikan gambar tidak terpotong */
+            height: 180px;
+            overflow: hidden;
             border-radius: 16px;
+            margin-bottom: 1.5rem;
+            background: rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+
+        .glass:hover .card-img-container img {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -63,6 +75,7 @@
 
     <main class="container mx-auto px-4 py-8 md:py-12">
         
+        <!-- HERO SECTION -->
         <section class="mb-16 text-center">
             <div class="glass p-8 md:p-12 max-w-5xl mx-auto border-t-2 border-purple-500/50 shadow-2xl">
                 <span class="bg-red-500 text-white px-5 py-1.5 rounded-full text-sm font-bold mb-6 inline-block tracking-wide">PROMO TERBATAS - DISKON HINGGA 47%</span>
@@ -71,13 +84,14 @@
                 </h1>
                 
                 <div class="flex justify-center mb-10 floating">
-                    <div class="glass p-3 image-frame shadow-2xl border border-white/10 max-w-sm md:max-w-md">
-                        <img src="<a href="https://ibb.co.com/V0k1L6z9"><img src="https://i.ibb.co.com/MyJvgdtS/foto-dok-kursi-pijat-toshiko-1757726784633-169.jpg" alt="foto-dok-kursi-pijat-toshiko-1757726784633-169" border="0"></a>
+                    <div class="glass p-3 shadow-2xl border border-white/10 max-w-sm md:max-w-md">
+                        <!-- GAMBAR HERO UTAMA -->
+                        <img src="https://i.ibb.co.com/MyJvgdtS/foto-dok-kursi-pijat-toshiko-1757726784633-169.jpg" alt="Kursi Pijat Toshiko" class="rounded-xl w-full h-auto">
                     </div>
                 </div>
 
-                <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-                    "Mau pijat keluar tapi mager antre dan macet? Kenalin, <strong>Toshiko Massage Chair</strong>. Kursi pijat nomor 1 di Vietnam dengan teknologi AI Jepang yang kini hadir di Indonesia!"
+                <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto italic">
+                    "Investasi kesehatan paling mewah untuk di rumah. Kini hadir dengan Teknologi AI Jepang!"
                 </p>
                 <a href="https://wa.me/6281313808070" class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 glow text-lg">
                     Klaim Promo Sekarang!
@@ -85,125 +99,81 @@
             </div>
         </section>
 
-        <section class="mb-20 grid md:grid-cols-12 gap-10 items-center">
-            
-            <div class="md:col-span-6 order-2 md:order-1">
-                <h2 class="text-3xl font-bold mb-6 text-purple-300">Jangan biarkan badan tersiksa.</h2>
-                <p class="text-gray-300 mb-8">Rasa lelah yang dibiarkan bisa menurunkan produktivitas. Toshiko hadir sebagai solusi investasi kesehatan mewah di rumah.</p>
-                
-                <div class="space-y-5">
-                    <div class="glass p-5 flex items-start gap-4 hover:border-blue-500/50 transition-colors">
-                        <div class="bg-purple-500/20 p-4 rounded-xl mt-1"><i class="fas fa-microchip text-purple-400 text-2xl"></i></div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-1">AI Body Scan</h3>
-                            <p class="text-sm text-gray-400">Memetakan tubuh otomatis dari pundak hingga kaki. Pijatan pas di titik pegal, bukan asal tekan.</p>
-                        </div>
-                    </div>
-                    <div class="glass p-5 flex items-start gap-4 hover:border-blue-500/50 transition-colors">
-                        <div class="bg-blue-500/20 p-4 rounded-xl mt-1"><i class="fas fa-cloud text-blue-400 text-2xl"></i></div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-1">Zero Gravity</h3>
-                            <p class="text-sm text-gray-400">Rebah hingga 154°, mengurangi tekanan tulang belakang. Berasa melayang seketika.</p>
-                        </div>
-                    </div>
-                    <div class="glass p-5 flex items-start gap-4 hover:border-blue-500/50 transition-colors">
-                        <div class="bg-green-500/20 p-4 rounded-xl mt-1"><i class="fas fa-bolt text-green-400 text-2xl"></i></div>
-                        <div>
-                            <h3 class="font-bold text-lg mb-1">Super Hemat Listrik</h3>
-                            <p class="text-sm text-gray-400">Cuma 150 Watt! Konsumsi daya lebih rendah dari rice cooker rumah Anda.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="md:col-span-6 order-1 md:order-2 flex justify-center">
-                <div class="glass p-3 image-frame shadow-2xl border border-white/10 max-w-sm md:max-w-lg">
-                    <img src=<a href="https://imgbb.com/"><img src="https://i.ibb.co.com/6RGZ2Hhy/T95.jpg" alt="T95" border="0"></a> 
-                    <p class="text-[10px] text-gray-600 mt-1 text-center">Gambar contoh: Seri Premium T95</p>
-                </div>
-            </div>
-        </section>
-
+        <!-- KATALOG PRODUK -->
         <section class="mb-20">
-            <h2 class="text-3xl font-bold text-center mb-12">Pilih Investasi Kesehatan Anda <span class="text-gray-500 text-lg">(April 2026)</span></h2>
+            <h2 class="text-3xl font-bold text-center mb-12">Pilih Seri Toshiko Anda</h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="glass p-7 text-center hover:border-purple-500 transition-all transform hover:-translate-y-2 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Toshiko T81</h3>
-                        <p class="text-gray-500 text-xs mb-4 uppercase tracking-wider">Entry-Level Premium</p>
-                        <p class="text-purple-400 font-extrabold text-3xl mb-6">Rp 16.990Jt</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- TIPE T81 -->
+                <div class="glass p-6 text-center hover:border-purple-500 transition-all transform hover:-translate-y-2 flex flex-col">
+                    <div class="card-img-container">
+                        <img src="INPUT_LINK_GAMBAR_T81_DI_SINI" alt="Toshiko T81">
                     </div>
-                    <ul class="text-sm text-gray-400 space-y-3 mb-8 text-left border-t border-white/10 pt-4">
-                        <li><i class="fas fa-check-circle text-purple-400 mr-2"></i>AI Body Scan</li>
-                        <li><i class="fas fa-check-circle text-purple-400 mr-2"></i>Pijatan Menyeluruh</li>
-                        <li><i class="fas fa-check-circle text-purple-400 mr-2"></i>Bluetooth Speaker</li>
+                    <h3 class="text-xl font-bold mb-1">Toshiko T81</h3>
+                    <p class="text-gray-500 text-xs mb-3 uppercase tracking-widest">Entry-Level Premium</p>
+                    <p class="text-purple-400 font-extrabold text-2xl mb-6">Rp 16.990Jt</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-6 text-left border-t border-white/10 pt-4">
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>AI Body Scan</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Bluetooth Speaker</li>
+                        <li><i class="fas fa-check text-purple-400 mr-2"></i>Hemat Listrik 150W</li>
                     </ul>
                 </div>
-                <div class="glass p-7 text-center border-2 border-purple-500 relative flex flex-col justify-between transform scale-105 shadow-2xl">
-                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-purple-500 text-xs px-4 py-1 rounded-full font-bold uppercase">Paling Populer</span>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2 pt-2">Toshiko T90</h3>
-                        <p class="text-gray-500 text-xs mb-4 uppercase tracking-wider">Balanced Performance</p>
-                        <p class="text-purple-400 font-extrabold text-3xl mb-6">Rp 35.900Jt</p>
-                    </div>
-                    <ul class="text-sm text-gray-400 space-y-3 mb-8 text-left border-t border-purple-500/50 pt-4">
-                        <li><i class="fas fa-star text-yellow-400 mr-2"></i>4D Touch/Massage</li>
-                        <li><i class="fas fa-fire text-red-400 mr-2"></i>InfraWarm Heater</li>
-                        <li><i class="fas fa-air-freshener text-blue-400 mr-2"></i>Airbag 20 Titik</li>
-                    </ul>
-                </div>
-                <div class="glass p-7 text-center hover:border-purple-500 transition-all transform hover:-translate-y-2 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Toshiko T95</h3>
-                        <p class="text-gray-500 text-xs mb-4 uppercase tracking-wider">Advanced Tech</p>
-                        <p class="text-purple-400 font-extrabold text-3xl mb-6">Rp 42.900Jt</p>
-                    </div>
-                    <ul class="text-sm text-gray-400 space-y-3 mb-8 text-left border-t border-white/10 pt-4">
-                        <li><i class="fas fa-robot mr-2"></i>Voice Control AI</li>
-                        <li><i class="fas fa-feather mr-2"></i>Material PU Premium</li>
-                        <li><i class="fas fa-list mr-2"></i>Fitur Paling Lengkap</li>
-                    </ul>
-                </div>
-                <div class="glass p-7 text-center hover:border-purple-500 transition-all transform hover:-translate-y-2 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Toshiko T96</h3>
-                        <p class="text-gray-500 text-xs mb-4 uppercase tracking-wider">Ultimate Luxury</p>
-                        <p class="text-purple-400 font-extrabold text-3xl mb-6">Rp 69.900Jt</p>
-                    </div>
-                    <ul class="text-sm text-gray-400 space-y-3 mb-8 text-left border-t border-white/10 pt-4">
-                        <li><i class="fas fa-crown mr-2 text-yellow-500"></i>The Ultimate Luxury</li>
-                        <li><i class="fas fa-gem mr-2"></i>Desain Eksklusif</li>
-                        <li><i class="fas fa-medal mr-2"></i>Garansi Prioritas</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="glass p-8 md:p-10 mt-12 bg-gradient-to-br from-white/10 to-transparent border border-white/10">
-                <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
-                    <div class="flex flex-col items-center md:items-start gap-3">
-                        <i class="fas fa-shield-alt text-yellow-500 text-4xl mb-2"></i>
-                        <h4 class="text-purple-300 font-bold text-lg mb-1">Garansi Fantastis</h4>
-                        <p class="text-sm text-gray-400">Mesin 10 Tahun, Suku Cadang 6 Tahun. Investasi tenang untuk jangka panjang.</p>
+                <!-- TIPE T90 -->
+                <div class="glass p-6 text-center border-2 border-purple-500 relative flex flex-col transform scale-105 shadow-2xl">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-purple-500 text-[10px] px-4 py-1 rounded-full font-bold uppercase">Best Seller</span>
+                    <div class="card-img-container">
+                        <img src="INPUT_LINK_GAMBAR_T90_DI_SINI" alt="Toshiko T90">
                     </div>
-                    <div class="flex flex-col items-center md:items-start gap-3">
-                        <i class="fas fa-couch text-white text-4xl mb-2"></i>
-                        <h4 class="text-purple-300 font-bold text-lg mb-1">Material Premium</h4>
-                        <p class="text-sm text-gray-400">Kulit PU lembut berstandar internasional. Tahan lama dan tidak panas.</p>
-                    </div>
-                    <div class="flex flex-col items-center md:items-start gap-3">
-                        <i class="fas fa-globe text-blue-400 text-4xl mb-2"></i>
-                        <h4 class="text-purple-300 font-bold text-lg mb-1">Reputasi Global</h4>
-                        <p class="text-sm text-gray-400">Merek Nomor 1 di Vietnam, kini melayani keluarga Indonesia.</p>
-                    </div>
+                    <h3 class="text-xl font-bold mb-1">Toshiko T90</h3>
+                    <p class="text-gray-500 text-xs mb-3 uppercase tracking-widest">Balanced Performance</p>
+                    <p class="text-purple-400 font-extrabold text-2xl mb-6">Rp 35.900Jt</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-6 text-left border-t border-purple-500/50 pt-4">
+                        <li><i class="fas fa-star text-yellow-400 mr-2"></i>4D Touch Massage</li>
+                        <li><i class="fas fa-star text-yellow-400 mr-2"></i>InfraWarm Heater</li>
+                        <li><i class="fas fa-star text-yellow-400 mr-2"></i>Airbag 20 Titik</li>
+                    </ul>
                 </div>
+
+                <!-- TIPE T95 -->
+                <div class="glass p-6 text-center hover:border-purple-500 transition-all transform hover:-translate-y-2 flex flex-col">
+                    <div class="card-img-container">
+                        <img src="https://i.ibb.co.com/6RGZ2Hhy/T95.jpg" alt="Toshiko T95">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Toshiko T95</h3>
+                    <p class="text-gray-500 text-xs mb-3 uppercase tracking-widest">Advanced Technology</p>
+                    <p class="text-purple-400 font-extrabold text-2xl mb-6">Rp 42.900Jt</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-6 text-left border-t border-white/10 pt-4">
+                        <li><i class="fas fa-robot text-purple-400 mr-2"></i>Smart Voice AI</li>
+                        <li><i class="fas fa-robot text-purple-400 mr-2"></i>Zero Gravity Max</li>
+                        <li><i class="fas fa-robot text-purple-400 mr-2"></i>Premium PU Leather</li>
+                    </ul>
+                </div>
+
+                <!-- TIPE T96 -->
+                <div class="glass p-6 text-center hover:border-purple-500 transition-all transform hover:-translate-y-2 flex flex-col">
+                    <div class="card-img-container">
+                        <img src="INPUT_LINK_GAMBAR_T96_DI_SINI" alt="Toshiko T96">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Toshiko T96</h3>
+                    <p class="text-gray-500 text-xs mb-3 uppercase tracking-widest">Ultimate Luxury</p>
+                    <p class="text-purple-400 font-extrabold text-2xl mb-6">Rp 69.900Jt</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-6 text-left border-t border-white/10 pt-4">
+                        <li><i class="fas fa-crown text-yellow-500 mr-2"></i>The Most Luxury Series</li>
+                        <li><i class="fas fa-crown text-yellow-500 mr-2"></i>Full Body Air Compression</li>
+                        <li><i class="fas fa-crown text-yellow-500 mr-2"></i>Garansi Prioritas</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
+        <!-- FOOTER / CTA -->
         <footer class="text-center">
             <div class="glass-dark p-10 rounded-3xl inline-block w-full max-w-3xl border-t-2 border-purple-500/50 shadow-2xl">
-                <h2 class="text-3xl font-bold mb-5">Tertarik Mencoba Unitnya?</h2>
-                <p class="mb-8 text-gray-400 max-w-xl mx-auto">Kami sering mengadakan pameran di mall besar seperti Summarecon Mall, AEON Mall, dan TSM. Hubungi kami untuk jadwal lokasi terbaru!</p>
+                <h2 class="text-3xl font-bold mb-5">Konsultasi Gratis Sekarang</h2>
+                <p class="mb-8 text-gray-400 max-w-xl mx-auto">Masih bingung pilih tipe yang mana? Chat Ridwan untuk mendapatkan rekomendasi terbaik sesuai budget dan kebutuhan Anda.</p>
                 
                 <div class="flex flex-col items-center gap-5">
                     <a href="https://wa.me/6281313808070" class="flex items-center gap-3.5 bg-green-600 hover:bg-green-700 text-white px-10 py-5 rounded-full font-bold text-xl transition-all transform hover:scale-105 glow shadow-lg">
@@ -213,7 +183,7 @@
                     <p class="text-base text-gray-500 tracking-wider">+62 813-1380-8070</p>
                 </div>
             </div>
-            <p class="mt-16 text-gray-600 text-xs tracking-widest pb-6">© 2026 TOSHIKO INDONESIA - JAPAN TECHNOLOGY. ALL RIGHTS RESERVED.</p>
+            <p class="mt-16 text-gray-600 text-xs tracking-widest pb-6 italic italic">Toshiko - Investasi Kesehatan Jangka Panjang</p>
         </footer>
 
     </main>
